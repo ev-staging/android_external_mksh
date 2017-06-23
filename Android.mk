@@ -92,7 +92,6 @@ LOCAL_CFLAGS += $(MKSH_CFLAGS)
 
 include $(BUILD_EXECUTABLE)
 
-ifeq ($(PRODUCT_FULL_TREBLE),true)
 # /vendor/etc/mkshrc
 include $(CLEAR_VARS)
 
@@ -130,7 +129,6 @@ LOCAL_CFLAGS += $(MKSH_CFLAGS)
 LOCAL_FORCE_STATIC_EXECUTABLE := true
 
 include $(BUILD_EXECUTABLE)
-endif
 
 MKSH_SRC_FILES:=
 MKSH_CFLAGS:=
